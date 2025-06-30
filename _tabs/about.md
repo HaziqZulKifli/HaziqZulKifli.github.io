@@ -1,8 +1,18 @@
 ---
-# the default layout is 'page'
-icon: fas fa-info-circle
+title: About
+icon: fas fa-user
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+Hi, I'm a **cybersecurity enthusiast** and IT student passionate about exploring the digital frontier of security.  
+
+I enjoy learning and working on topics like:
+
+- 🐞 Malware analysis  
+- 🧠 Memory forensics  
+- 🔐 Penetration testing  
+- 🌐 Web application security  
+
+This blog is where I document my journey, share knowledge, and write about what I learn.
+
+Feel free to explore my posts and connect with me on [GitHub](https://github.com/HaziqZulkifli) or [Medium](https://medium.com/@your-medium-handle).

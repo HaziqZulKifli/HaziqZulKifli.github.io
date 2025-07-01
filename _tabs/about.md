@@ -15,4 +15,4 @@ I enjoy learning and working on topics like:
 
 This blog is where I document my journey, share knowledge, and write about what I learn.
 
-Feel free to explore my posts and connect with me on [GitHub](https://github.com/HaziqZulkifli) or [Medium](https://medium.com/@your-medium-handle).
+Feel free to explore my posts and connect with me on [LinkedIn](https://www.linkedin.com/in/haziq-zulkifli-010941340/) 

@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Memory Analysis"
-date: 2025-06-30 11:00:00 +0800
-categories: [intern ,memory analysis]
-tags: [cybersecurity, forensics, memory]
+date: 2025-05-23 11:00:00 +0800
+categories: [intern, forensic, memory analysis]
+tags: [writeup,forensics, memory,intern]
 image: https://miro.medium.com/v2/resize:fit:786/format:webp/1*RNKFWrN0zhqGg4c8LQaz6A.png
 ---
 

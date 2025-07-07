@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Multi Stage"
-date: 2025-04-21 11:00:00 +0800
+date: 2025-04-21 
 categories: [writeup ,malware analysis]
 tags: [writeup, malware analysis]
 image: https://miro.medium.com/v2/resize:fit:272/format:webp/1*8jRzQ9YRzqdEy3xYTu3kKQ.png

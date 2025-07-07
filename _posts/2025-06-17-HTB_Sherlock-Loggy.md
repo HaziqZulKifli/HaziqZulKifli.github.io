@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "HTB_Sherlock-Loggy"
-date: 2025-06-17 11:00:00 +0800
+date: 2025-06-17 
 categories: [writeup, malware analysis]
 tags: [writeup,malware analysis]
 image: https://miro.medium.com/v2/resize:fit:1100/format:webp/1*DeviU290wLpHGrnrE_iWuQ.png

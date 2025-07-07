@@ -106,7 +106,7 @@ During the dynamic/static analysis of the binary, we identified a call to the Wi
 Even though `CreateFile` is essential to the process, the presence of `WriteFile` in the binary strongly indicates file interaction which is often more revealing during initial triage.
 
 <figure style="text-align:center;">
-  <img src="https://miro.medium.com/v2/resize:fit:604/format:webp/1*bu4MYd0vV3hIJXFo_tf8yw.png"  style="width:100%;">
+  <img src="https://miro.medium.com/v2/resize:fit:604/format:webp/1*bu4MYd0vV3hIJXFo_tf8yw.png"  alt="Process List" style="width:100%;">
   <figcaption style="text-align:center;"><em>Windows API function</em></figcaption>
 </figure>
 
@@ -126,7 +126,7 @@ Since the malware uses FTP for communication, I searched for the string :21 in G
 </figure>
 
 <figure style="text-align:center;">
-  <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*4erjd3LNCN53ianX0Nc4dw.png"  style="width:100%;">
+  <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*4erjd3LNCN53ianX0Nc4dw.png"  alt="Process List" style="width:100%;">
   <figcaption style="text-align:center;"><em>The domain</em></figcaption>
 </figure>
 
@@ -146,7 +146,7 @@ Started from the main function i found main.sendFilesViaFTP() function .
 This function appears to be responsible for exfiltrating data via the FTP protocol.
 
 <figure style="text-align:center;">
-  <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*3KlHi8G1RT2b0-gXy5dcsw.png"  style="width:100%;">
+  <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*3KlHi8G1RT2b0-gXy5dcsw.png"  alt="Process List" style="width:100%;">
   <figcaption style="text-align:center;"><em> main.sendFilesViaFTP() </em></figcaption>
 </figure>
 

@@ -4,15 +4,16 @@ icon: fas fa-user
 order: 4
 ---
 
-Hi, I'm a **cybersecurity enthusiast** and IT student passionate about exploring the digital frontier of security.  
+Hi there! I’m an IT student and cybersecurity enthusiast with a deep curiosity for how systems work—and how they can be broken, analyzed, and secured.
 
-I enjoy learning and working on topics like:
+I’m currently exploring areas like:
 
-- 🐞 Malware analysis  
-- 🧠 Memory forensics  
-- 🔐 Penetration testing  
-- 🌐 Web application security  
+### 🛡️ Security Operations Center (SOC) monitoring & threat detection 
+### 🐞 Malware analysis & reverse engineering 
+### 🧠 Memory and disk forensics
+### 🔐 Ethical hacking & penetration testing
+### 🌐 Web application security vulnerabilities
 
-This blog is where I document my journey, share knowledge, and write about what I learn.
+This blog is my space to share what I’m learning, reflect on challenges, and document my progress as I grow in the field. Whether it's tools, techniques, or write-ups—if I’ve learned something useful, you'll likely find it here.
 
-Feel free to explore my posts and connect with me on [LinkedIn](https://www.linkedin.com/in/haziq-zulkifli-010941340/) 
+Thanks for stopping by! Feel free to explore, connect, or just say hi on [LinkedIn](https://www.linkedin.com/in/haziq-zulkifli-010941340/) 

@@ -2,8 +2,8 @@
 layout: post
 title: "Multi Stage"
 date: 2025-04-21 11:00:00 +0800
-categories: [intern ,malware analysis]
-tags: [writeup, malware analysis, intern]
+categories: [writeup ,malware analysis]
+tags: [writeup, malware analysis]
 image: https://miro.medium.com/v2/resize:fit:272/format:webp/1*8jRzQ9YRzqdEy3xYTu3kKQ.png
 ---
 
@@ -59,7 +59,9 @@ REM dG8K
 
 
 ```
- <figcaption style="text-align:center;"><em>open the file using text editor</em></figcaption>
+ 
+
+## **What windows tool used by to download the second stage payload?**
 
  I opened the `.bat` file using a text editor called Mousepad and observed that the code was heavily obfuscated, containing a mixture of random-looking symbols and meaningless strings, making it difficult to interpret at first glance. 
  
@@ -67,7 +69,7 @@ REM dG8K
  
  So, I separated the commands accordingly to better analyze them. To confirm that the code was Base64-encoded, I extracted a portion of it and decoded it.
 
- <figure style="text-align:center;">
+<figure style="text-align:center;">
   <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*C24azyzRynbYQmpYMDrdoA.png" alt="Process List" style="display:block; margin: 0 auto; max-width: 100%;">
   <figcaption style="text-align:center;"><em>portion of the code decoded</em></figcaption>
 </figure>
@@ -90,7 +92,9 @@ set RTYbrtgVEWRqqwer= -NoP -wiNdowSTYLE hiddeN -ExEcuTioNPolicy BypAss -CoMmAND
 
 From the decoded text we now have a link to the second stage of the malware.A suspicious PowerShell script was identified leveraging obfuscated variables, Base64 decoding, and the bitsadmin utility to stealthily download and execute a remote payload (`stacy.ps1`) from GitHub, while employing execution policy bypasses and hidden window execution—indicative of potential malware loader behavior.
 
-## What windows tool used by to download the second stage payload? flag: bitsadmin
+**Answer: bitsadmin**
+
+## **Find the link to the third stage of the malware ?**
 
 Upon reviewing the linked PowerShell script `stacy.ps1`, it was found to be heavily obfuscated, using randomized variables, Base64 decoding, and encoded shellcode to reconstruct and execute a malicious binary `stacy.exe`. The script downloads the payload via Invoke-WebRequest, extracts it, and launches it using execution policy bypass techniques—indicative of malware dropper behavior.
 
@@ -120,8 +124,9 @@ It then extracted the contents and ran an executable file called stacy.exe. The 
 
 In the end, the script was designed to download and run a potentially harmful file.
 
-## Find the link to the third stage of the malware ? flag: https://github.com/Internet20/filesamples/raw/master/misc/stacysmom.zip
+**Answer: https://github.com/Internet20/filesamples/raw/master/misc/stacysmom.zip**
 
+## **What is the URL the final stage malware trying to access?**
 
 unzip the zip file and open the read me .txt
 
@@ -181,7 +186,7 @@ here i found the .fi directory and change the directory into it
 
 ```
 
-i cat the `ch_1.lnk` to view what in it and found this
+i cat the `ch_1.lnk` to view what is in it and found this
 
 ```
 C:\Program Files\Google\Chrome\
@@ -189,4 +194,4 @@ Application"https://link.malcore.io"
 (C:\Users\saman\Downloads\just_m_logo.ico
 ```
 
-## What is the URL the final stage malware trying to access? flag : https://link.malcore.io
+**Answer: https://link.malcore.io**

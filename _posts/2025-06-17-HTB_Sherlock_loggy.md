@@ -21,7 +21,7 @@ Janice from accounting is beside herself! She was contacted by the SOC to tell h
 Started the examination with determining the the file architecture using the file command.
 
 <figure style="text-align:center;">
-  <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*Nbj29i8kZT-0PgwaiVVilA.png"  style="width:100%;">
+  <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*Nbj29i8kZT-0PgwaiVVilA.png" alt="Process List" style="width:100%;">
   <figcaption style="text-align:center;"><em>file info</em></figcaption>
 </figure>
 
@@ -40,7 +40,7 @@ This helps to ensure we can use the correct tools and expect the right execution
 ## **What is the SHA-256 hash of this malware binary?**
 
 <figure style="text-align:center;">
-  <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*XwxhmpTqPntFkOfTsM1qaw.png"  style="width:100%;">
+  <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*XwxhmpTqPntFkOfTsM1qaw.png" alt="Process List" style="width:100%;">
   <figcaption style="text-align:center;"><em>sha256sum info</em></figcaption>
 </figure>
 
@@ -55,7 +55,7 @@ Answer: `6acd8a362def62034cbd011e6632ba5120196e2011c83dc6045fcb28b590457c`
 For this task i used DIE(Detect it Easy) tool. DIE is used to analyze the executable for packing, compiler information, entropy and even the language used…
 
 <figure style="text-align:center;">
-  <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*YmaZF4wvdqV50n5-l4Fltg.png"  style="width:100%;">
+  <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*YmaZF4wvdqV50n5-l4Fltg.png"  alt="Process List" style="width:100%;">
   <figcaption style="text-align:center;"><em>file language</em></figcaption>
 </figure>
 
@@ -68,7 +68,7 @@ Answer : `Golang 1.22.3`
 Since the task state that github repos referenced in static string i used the strings command to list the strings available and filter the strings to show only strings that have github in it using grep command.
 
 <figure style="text-align:center;">
-  <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*xA_DfC3tcl26TbdwG4nn5A.png" style="width:100%;">
+  <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*xA_DfC3tcl26TbdwG4nn5A.png" alt="Process List" style="width:100%;">
   <figcaption style="text-align:center;"><em>search strings for term github</em></figcaption>
 </figure>
 
@@ -78,7 +78,7 @@ Why? This is due to the github repo may provides functionality to connect to and
 This method commonly used by attackers to exfiltrate data from a victim’s system to an external server.
 
 <figure style="text-align:center;">
-  <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*J_FTZeZwnEBY-o27bh7Qsw.png"  style="width:100%;">
+  <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*J_FTZeZwnEBY-o27bh7Qsw.png"  alt="Process List" style="width:100%;">
   <figcaption style="text-align:center;"><em>search strings for term github</em></figcaption>
 </figure>
 
@@ -87,7 +87,7 @@ Answer: `github.com/jlaffaye/ftp`
 ## **What dependency, expressed as a GitHub repo, supports Janice’s assertion that she thought she downloaded something that can just take screenshots?**
 
 <figure style="text-align:center;">
-  <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*r9lClFCVQb7v4KlX6GKQcw.png"  style="width:100%;">
+  <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*r9lClFCVQb7v4KlX6GKQcw.png"  alt="Process List" style="width:100%;">
   <figcaption style="text-align:center;"><em>github showing a screenshot functionality</em></figcaption>
 </figure>
 
@@ -99,7 +99,7 @@ Answer: `github.com/kbinani/screenshot`
 During the dynamic/static analysis of the binary, we identified a call to the Windows API function `WriteFile`. This function is part of the Windows API and is typically used to write data to a file or I/O device.
 
 <figure style="text-align:center;">
-  <img src="https://miro.medium.com/v2/resize:fit:616/format:webp/1*p61SkWajX-_w8PXLlyxUxg.png"  style="width:100%;">
+  <img src="https://miro.medium.com/v2/resize:fit:616/format:webp/1*p61SkWajX-_w8PXLlyxUxg.png"  alt="Process List" style="width:100%;">
   <figcaption style="text-align:center;"><em>Windows API function</em></figcaption>
 </figure>
 
@@ -121,7 +121,7 @@ Answer: `WriteFile`
 Since the malware uses FTP for communication, I searched for the string :21 in Ghidra, which is the default FTP port.
 
 <figure style="text-align:center;">
-  <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*1LKEL2_eaKbAujJHlQI7Fw.png"  style="width:100%;">
+  <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*1LKEL2_eaKbAujJHlQI7Fw.png" alt="Process List" style="width:100%;">
   <figcaption style="text-align:center;"><em>filter 21 for ftp port</em></figcaption>
 </figure>
 
@@ -139,7 +139,7 @@ Answer: `gotthem.htb`
 Started from the main function i found main.sendFilesViaFTP() function .
 
 <figure style="text-align:center;">
-  <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*zJnJAk36AHAbPRKsNX-bdQ.png"  style="width:100%;">
+  <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*zJnJAk36AHAbPRKsNX-bdQ.png" alt="Process List" style="width:100%;">
   <figcaption style="text-align:center;"><em> from main function </em></figcaption>
 </figure>
 
@@ -161,22 +161,22 @@ Answer: `NottaHacker:Cle@rtextP@ssword`
 From the main function i followed a variable and found it referenced to keylog.txt. Besides, I already know it uses keylog.txt since the challenge already provided with keylog.txt.
 
 <figure style="text-align:center;">
-  <img src="https://miro.medium.com/v2/resize:fit:466/format:webp/1*gnD7IPR1sj8f-4pbdpEGVQ.png"  style="width:100%;">
+  <img src="https://miro.medium.com/v2/resize:fit:466/format:webp/1*gnD7IPR1sj8f-4pbdpEGVQ.png" alt="Process List" style="width:100%;">
   <figcaption style="text-align:center;"><em> from main function </em></figcaption>
 </figure>
 
 <figure style="text-align:center;">
-  <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*Aki1Ng4X2iGwnkK2cJVaYQ.png"  style="width:100%;">
+  <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*Aki1Ng4X2iGwnkK2cJVaYQ.png" alt="Process List" style="width:100%;">
   <figcaption style="text-align:center;"><em> found a keylog.txt text </em></figcaption>
 </figure>
 
 <figure style="text-align:center;">
-  <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*YNoxTUq7FPZWm0de2URTqw.png"  style="width:100%;">
+  <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*YNoxTUq7FPZWm0de2URTqw.png" alt="Process List" style="width:100%;">
   <figcaption style="text-align:center;"><em> located keylog.txt </em></figcaption>
 </figure>
 
 <figure style="text-align:center;">
-  <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*imXoMU1ayWd6TQ7A-9P5lw.png"  style="width:100%;">
+  <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*imXoMU1ayWd6TQ7A-9P5lw.png" alt="Process List" style="width:100%;">
   <figcaption style="text-align:center;"><em> the keylog.txt </em></figcaption>
 </figure>
 
@@ -187,24 +187,24 @@ Answer: `keylog.txt`
 Opened the keylog.txt file because the captured keystrokes should be recorded here. Once opened confirmed that this file record the keystrokes of the user inputted.
 
 <figure style="text-align:center;">
-  <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*imXoMU1ayWd6TQ7A-9P5lw.png"  style="width:100%;">
+  <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*imXoMU1ayWd6TQ7A-9P5lw.png"  alt="Process List" style="width:100%;">
   <figcaption style="text-align:center;"><em> the keylog.txt </em></figcaption>
 </figure>
 
 From this text analysed possible username and password.
 
 <figure style="text-align:center;">
-  <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*VEAUxngLxUiTbGCGleo_OQ.png"  style="width:100%;">
+  <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*VEAUxngLxUiTbGCGleo_OQ.png"  alt="Process List" style="width:100%;">
   <figcaption style="text-align:center;"><em> username keystroke recorded </em></figcaption>
 </figure>
 
 <figure style="text-align:center;">
-  <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*KIHnsqS89bHEZ_XTNjT1QA.png"  style="width:100%;">
+  <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*KIHnsqS89bHEZ_XTNjT1QA.png" alt="Process List" style="width:100%;">
   <figcaption style="text-align:center;"><em> password keystroke recorded </em></figcaption>
 </figure>
 
 <figure style="text-align:center;">
-  <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*tSMpDa2K6LQDePLQIs0ozA.png"  style="width:100%;">
+  <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*tSMpDa2K6LQDePLQIs0ozA.png" alt="Process List" style="width:100%;">
   <figcaption style="text-align:center;"><em> password keystroke recorded </em></figcaption>
 </figure>
 
@@ -215,7 +215,7 @@ Answer: `janice:Password123`
 The challenge provided a screenshot, which appeared to be taken from the victim’s machine. This assumption is supported by the presence of the github.com/kbinani/screenshot package in the malware binary. This package is commonly used in Go projects to capture screen images.
 
 <figure style="text-align:center;">
-  <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*ucqCdytF-Dx9S2Kw80SlKQ.png"  style="width:100%;">
+  <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*ucqCdytF-Dx9S2Kw80SlKQ.png" alt="Process List" style="width:100%;">
   <figcaption style="text-align:center;"><em> The screenshot feature </em></figcaption>
 </figure>
 
@@ -227,6 +227,6 @@ Answer: `Solitaire`
 Yeeah finally solve this challenge. Thank You for reading.
 
 <figure style="text-align:center;">
-  <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*R-Cor8y96XoAG694JhNoQQ.png"  style="width:100%;">
+  <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*R-Cor8y96XoAG694JhNoQQ.png" alt="Process List" style="width:100%;">
   <figcaption style="text-align:center;"><em>  </em></figcaption>
 </figure>

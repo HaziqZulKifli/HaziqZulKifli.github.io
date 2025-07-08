@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "HTB_Sherlock-Loggy"
+title: "HTB Sherlock: Loggy"
 date: 2025-06-17 
 categories: [writeup, malware analysis]
 tags: [writeup,malware analysis]
